@@ -1,0 +1,256 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Arial', sans-serif;
+    color: black;
+    background-color: rgba(247, 245, 242, 0.938);
+    line-height: 1.6;
+}
+
+/*Header */
+header {
+    background-color: #ccc;
+    padding: 20px;
+    text-align: center;
+    color: black;
+}
+
+header h1 {
+    font-family: 'Georgia', serif;
+    font-size: 36px;
+    color: black;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 10px;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: maroon;
+    font-size: 18px;
+    font-weight: bold;
+    transition: text-shadow 0.3s ease, color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: maroon;
+    text-shadow: 0 0 8px rgba(128, 0, 0, 0.7), 0 0 12px rgba(128, 0, 0, 0.5);
+}
+img {
+    width: 70%;  
+    height: auto;
+    display: block;
+    margin: 0 auto; 
+}
+/* Section Styles */
+section {
+    padding: 50px;
+    text-align: center;
+}
+
+section h2 {
+    font-family: 'Georgia', serif;
+    font-size: 32px;
+    color: maroon;
+    margin-bottom: 20px;
+}
+
+section p {
+    font-size: 18px;
+    color: black;
+    margin-bottom: 30px;
+}
+
+
+.image-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.gallery-img {
+    width: 400px;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.gallery-img:hover {
+    transform: scale(1.05);
+}
+
+/* Empowerment Section for Videos */
+#empowerment video {
+    width: 400px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+/* Video and Audio  */
+video, audio {
+    width: 80%;
+    margin: 20px 0;
+}
+
+/* Best Sellers Section */
+#best-sellers {
+    text-align: center;
+    padding: 30px;
+    background-color: #f9f3ec;
+}
+
+#best-sellers h2 {
+    font-size: 28px;
+    color: #8b0000;
+    margin-bottom: 20px;
+}
+
+/* Scrollable Product Container */
+.product-container {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    padding: 10px;
+    scroll-snap-type: x mandatory;
+}
+
+/* Individual Product Styling */
+.product {
+    flex: 0 0 auto;
+    width: 250px;
+    text-align: center;
+    scroll-snap-align: start;
+    position: relative;
+}
+
+.product img {
+    width: 250px; 
+    height: 250px; 
+    object-fit: cover; 
+    border-radius: 10px;
+    transition: opacity 0.5s ease-in-out;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.product img:nth-child(2) {
+    opacity: 0;
+}
+
+.product:hover img:nth-child(1) {
+    opacity: 0;
+}
+
+.product:hover img:nth-child(2) {
+    opacity: 1;
+}
+
+.product p {
+    font-size: 16px;
+    color: #333;
+    margin-top: 260px;
+}
+/* Form Style*/
+form {
+    text-align: left;
+    margin: 20px auto;
+    max-width: 400px;
+}
+
+form label {
+    font-size: 18px;
+    color: black;
+    margin-bottom: 5px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+#quiz button {
+    background-color: #f0f0f0;
+    padding: 15px 30px; 
+    font-size: 18px;
+    margin: 10px;
+    border: 2px solid maroon;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#quiz button:hover {
+    background-color: #ccc;
+}
+
+form button {
+    background-color: maroon;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    
+}
+
+
+form button:hover {
+    background-color: darkred; 
+}
+
+
+/* Footer */
+
+footer {
+    background-color: #f1f1f1; 
+    padding: 20px 0;
+    color: black; 
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section h4 {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section li {
+    margin-bottom: 8px;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer-bottom p {
+    font-size: 14px;
+}
